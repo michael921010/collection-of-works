@@ -1,18 +1,39 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="@/assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+  <div>Home</div>
+  <div class="content">
+    <ul class="list">
+      <li v-for="link in list" :key="link.name">
+        <router-link :to="link.path">{{ link.label }}</router-link>
+      </li>
+    </ul>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
-
+import { routes } from "@/router";
+import { pick } from "ramda";
 export default {
-  name: "Home",
-  components: {
-    HelloWorld,
+  computed: {
+    list() {
+      return routes
+        .filter(({ label }) => label !== undefined)
+        .map((e) => pick(["label", "path", "name"])(e));
+    },
+  },
+  mounted() {
+    console.log(this.list);
   },
 };
 </script>
+
+<style lang="scss" scoped>
+.content {
+  padding: 15px;
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 20px;
+}
+</style>

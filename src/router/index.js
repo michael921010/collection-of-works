@@ -1,12 +1,23 @@
 import { createRouter, createWebHistory } from "vue-router";
-import Home from "@/views/Home.vue";
 
 export const routes = [
   {
     path: "/",
     name: "Home",
-    component: Home,
+    component: () => import("@/views/Home"),
     alias: "/home",
+  },
+  {
+    label: "Curve Outside Effects Navigation Indicator",
+    path: "/curve-outside-effects-navigation-indicator",
+    name: "CurveOutsideEffectsNavigationIndicator",
+    component: () => import("@/views/CurveOutsideEffectsNavigationIndicator"),
+  },
+  {
+    label: "Started",
+    path: "/started",
+    name: "Started",
+    component: () => import("@/views/Started"),
   },
   {
     path: "/about",

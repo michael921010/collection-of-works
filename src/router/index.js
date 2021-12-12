@@ -32,6 +32,12 @@ export const routes = [
     component: () => import("@/views/AmbientLightGlowingCube"),
   },
   {
+    label: "Custom Dropdown Menu",
+    path: "/custom-dropdown-menu",
+    name: "CustomDropdownMenu",
+    component: () => import("@/views/CustomDropdownMenu"),
+  },
+  {
     label: "Started",
     path: "/started",
     name: "Started",

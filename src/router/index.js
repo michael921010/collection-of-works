@@ -25,7 +25,12 @@ export const routes = [
     name: "BlinkingAnimationText",
     component: () => import("@/views/BlinkingAnimationText"),
   },
-
+  {
+    label: "Ambient Light Glowing Cube",
+    path: "/ambient-light-glowing-cube",
+    name: "AmbientLightGlowingCube",
+    component: () => import("@/views/AmbientLightGlowingCube"),
+  },
   {
     label: "Started",
     path: "/started",

@@ -14,6 +14,13 @@ export const routes = [
     component: () => import("@/views/CurveOutsideEffectsNavigationIndicator"),
   },
   {
+    label: "Fluorescent Loading Indicator",
+    path: "/fluorescent-loading-indicator",
+    name: "FluorescentLoadingIndicator",
+    component: () => import("@/views/FluorescentLoadingIndicator"),
+  },
+
+  {
     label: "Started",
     path: "/started",
     name: "Started",

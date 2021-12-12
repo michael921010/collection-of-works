@@ -19,6 +19,12 @@ export const routes = [
     name: "FluorescentLoadingIndicator",
     component: () => import("@/views/FluorescentLoadingIndicator"),
   },
+  {
+    label: "Blinking Animation Text",
+    path: "/blinking-animation-text",
+    name: "BlinkingAnimationText",
+    component: () => import("@/views/BlinkingAnimationText"),
+  },
 
   {
     label: "Started",

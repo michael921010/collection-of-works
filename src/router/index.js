@@ -38,6 +38,12 @@ export const routes = [
     component: () => import("@/views/CustomDropdownMenu"),
   },
   {
+    label: "Ribbon Shape Of Card",
+    path: "/ribbon-shape-of-card",
+    name: "RibbonShapeOfCard",
+    component: () => import("@/views/RibbonShapeOfCard"),
+  },
+  {
     label: "Started",
     path: "/started",
     name: "Started",

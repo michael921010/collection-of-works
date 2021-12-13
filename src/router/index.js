@@ -44,6 +44,12 @@ export const routes = [
     component: () => import("@/views/RibbonShapeOfCard"),
   },
   {
+    label: "Color Rain",
+    path: "/color-rain",
+    name: "ColorRain",
+    component: () => import("@/views/ColorRain"),
+  },
+  {
     label: "Started",
     path: "/started",
     name: "Started",

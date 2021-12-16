@@ -55,6 +55,12 @@ export const routes = [
     name: "SquidGameResponsiveWebsite",
     component: () => import("@/views/SquidGameResponsiveWebsite"),
   },
+  {
+    label: "CSS Only Keyboard Keys UI Design",
+    path: "/css-only-keyboard-keys-ui-design",
+    name: "CSSOnlyKeyboardKeysUIDesign",
+    component: () => import("@/views/CSSOnlyKeyboardKeysUIDesign"),
+  },
 
   {
     label: "Started",

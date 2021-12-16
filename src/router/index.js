@@ -50,6 +50,13 @@ export const routes = [
     component: () => import("@/views/ColorRain"),
   },
   {
+    label: "Squid Game Responsive Website",
+    path: "/squid-game-responsive-website",
+    name: "SquidGameResponsiveWebsite",
+    component: () => import("@/views/SquidGameResponsiveWebsite"),
+  },
+
+  {
     label: "Started",
     path: "/started",
     name: "Started",
